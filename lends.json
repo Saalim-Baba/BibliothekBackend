@@ -1,0 +1,107 @@
+[
+  {
+    "identity": "A001",
+    "customer_identity": "C123",
+    "isbn": "978-3-16-148410-0",
+    "borrowed_at": "2024-04-10T14:30:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A002",
+    "customer_identity": "C124",
+    "isbn": "978-0-306-40615-7",
+    "borrowed_at": "2024-04-11T09:20:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A003",
+    "customer_identity": "C125",
+    "isbn": "978-3-16-148411-7",
+    "borrowed_at": "2024-04-10T15:45:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A004",
+    "customer_identity": "C126",
+    "isbn": "978-0-395-19395-8",
+    "borrowed_at": "2024-04-12T11:00:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A005",
+    "customer_identity": "C127",
+    "isbn": "978-0-06-095643-1",
+    "borrowed_at": "2024-04-10T12:00:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A006",
+    "customer_identity": "C128",
+    "isbn": "978-0-575-07087-2",
+    "borrowed_at": "2024-04-13T14:20:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A007",
+    "customer_identity": "C129",
+    "isbn": "978-0-7475-3269-9",
+    "borrowed_at": "2024-04-15T10:40:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A008",
+    "customer_identity": "C130",
+    "isbn": "978-0-14-027633-6",
+    "borrowed_at": "2024-04-16T09:50:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A009",
+    "customer_identity": "C131",
+    "isbn": "978-0-521-85033-5",
+    "borrowed_at": "2024-04-10T16:30:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A010",
+    "customer_identity": "C132",
+    "isbn": "978-1-86092-049-5",
+    "borrowed_at": "2024-04-14T09:45:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A011",
+    "customer_identity": "C133",
+    "isbn": "978-3-16-148410-0",
+    "borrowed_at": "2024-04-17T14:00:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A012",
+    "customer_identity": "C134",
+    "isbn": "978-1-4028-9462-6",
+    "borrowed_at": "2024-04-10T13:15:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A013",
+    "customer_identity": "C135",
+    "isbn": "978-0-316-00991-8",
+    "borrowed_at": "2024-04-12T10:30:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A014",
+    "customer_identity": "C136",
+    "isbn": "978-0-671-73195-0",
+    "borrowed_at": "2024-04-11T10:30:00Z",
+    "returned_at": null
+  },
+  {
+    "identity": "A015",
+    "customer_identity": "C137",
+    "isbn": "978-0-812-57434-0",
+    "borrowed_at": "2024-04-13T12:30:00Z",
+    "returned_at": null
+  }
+]

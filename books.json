@@ -1,0 +1,62 @@
+[
+    {
+      "isbn": 1234,
+      "title": "Die Verwandlung",
+      "year": 1915,
+      "author": "Franz Kafka"
+    },
+    {
+      "isbn": 2345,
+      "title": "Die Blechtrommel",
+      "year": 1959,
+      "author": "Günter Grass"
+    },
+    {
+      "isbn": 3456,
+      "title": "Zauberberg",
+      "year": 1924,
+      "author": "Thomas Mann"
+    },
+    {
+      "isbn": 4567,
+      "title": "Unendliche Geschichte",
+      "year": 1979,
+      "author": "Michael Ende"
+    },
+    {
+      "isbn": 5678,
+      "title": "Faust",
+      "year": 1808,
+      "author": "Johann Wolfgang von Goethe"
+    },
+    {
+      "isbn": 6789,
+      "title": "Demian",
+      "year": 1919,
+      "author": "Hermann Hesse"
+    },
+    {
+      "isbn": 7890,
+      "title": "Das Parfum",
+      "year": 1985,
+      "author": "Patrick Süskind"
+    },
+    {
+      "isbn": 8901,
+      "title": "Die Physiker",
+      "year": 1962,
+      "author": "Friedrich Dürrenmatt"
+    },
+    {
+      "isbn": 9012,
+      "title": "Der Vorleser",
+      "year": 1995,
+      "author": "Bernhard Schlink"
+    },
+    {
+      "isbn": 10123,
+      "title": "Im Westen nichts Neues",
+      "year": 1928,
+      "author": "Erich Maria Remarque"
+    }
+]
