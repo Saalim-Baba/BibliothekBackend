@@ -7,10 +7,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 const swaggerUi = require('swagger-ui-express')
 const swaggerDocument = require('./swagger-output.json')
-const session = require("express-session");
+const session = require('express-session')
 
 app.use(session({
-  secret: "megamind",
+  secret: 'megamind',
   resave: true,
   saveUninitialized: true,
   cookie: {}
@@ -20,13 +20,13 @@ app.get('/books', (request, response) => {
   response.json(books)
 })
 app.get('/books/:isbn', (request, response) => {
-  const isbn = request.params.isbn;
-  const book = books.find(b => b.isbn === JSON.parse(isbn));
+  const isbn = request.params.isbn
+  const book = books.find(b => b.isbn === JSON.parse(isbn))
   if (!book) {
-    return response.status(404).send({ error: "Book not found" });
+    return response.status(404).send({ error: 'Book not found' })
   }
-  response.json(book);
-});
+  response.json(book)
+})
 
 app.post('/books', (request, response) => {
   const newEntry = request.body
@@ -64,45 +64,45 @@ app.patch('/books/:isbn', (request, response) => {
 /// lends start here
 
 app.get('/lends', (request, response) => {
-  if (request.session.status === "authentifiziert"){
-    response.json(lends)}
-  else{
+  if (request.session.status === 'authentifiziert') {
+    response.json(lends)
+  } else {
     response.sendStatus(401)
   }
 })
 app.get('/lends/:id', (request, response) => {
-  if (request.session.status === "authentifiziert"){
+  if (request.session.status === 'authentifiziert') {
     const id = request.params.id
     const lend = lends.find(b => b.identity === id)
     if (lend !== undefined) {
       response.json(lend)
     } else {
       response.sendStatus(404)
-    }}
-  else{
+    }
+  } else {
     response.sendStatus(401)
   }
 })
 app.post('/lends', (request, response) => {
-  if (request.session.status === "authentifiziert"){
+  if (request.session.status === 'authentifiziert') {
     const newLend = request.body
     if (isValid(newLend)) {
       lends.push(newLend)
       response.sendStatus(201)
     } else {
       response.sendStatus(422)
-    }}
-  else{
+    }
+  } else {
     response.sendStatus(401)
   }
 })
 app.delete('/lends/:id', (request, response) => {
-  if (request.session.status === "authentifiziert"){
+  if (request.session.status === 'authentifiziert') {
     const id = request.params.id
     const lend = lends.findIndex(b => b.identity === id)
     lends.splice(lend, 1)
-    response.json(lends)}
-  else{
+    response.json(lends)
+  } else {
     response.sendStatus(401)
   }
 })
@@ -110,27 +110,24 @@ app.delete('/lends/:id', (request, response) => {
 app.post('/login', (request, response) => {
   const email = request.query.email
   const password = request.query.password
-  if (email === "desk@library.example" && password === "m295"){
-    request.session.status = "authentifiziert"
+  if (email === 'desk@library.example' && password === 'm295') {
+    request.session.status = 'authentifiziert'
     response.sendStatus(200)
-  }
-  else{
-    request.session.status = "nicht authentifiziert"
+  } else {
+    request.session.status = 'nicht authentifiziert'
     response.sendStatus(401)
   }
 })
 
-app.get('/verify', (request, response) =>{
-  if (request.session.status === "authentifiziert"){
+app.get('/verify', (request, response) => {
+  if (request.session.status === 'authentifiziert') {
     response.sendStatus(200)
-  }
-  else{
+  } else {
     response.sendStatus(401)
   }
-
 })
-app.delete('/logout', (request, response)=>{
-  request.session.status = "nicht authentifiziert"
+app.delete('/logout', (request, response) => {
+  request.session.status = 'nicht authentifiziert'
   response.sendStatus(204)
 })
 function isValid (lends) {
